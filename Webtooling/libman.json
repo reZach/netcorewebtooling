@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "filesystem",
+      "library": "node_modules/gulp-cshtml-minify/",
+      "files": [ "index.js" ],
+      "destination": "wwwroot/lib/gulp-cshtml-minify/"
+    }
+  ]
+}

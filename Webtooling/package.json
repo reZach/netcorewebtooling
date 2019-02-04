@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "scripts": {
+    "clean": "node ./clean.js",
+    "libman": "libman clean && libman restore",
+    "webpack": "webpack ./wwwroot/js/site.js --output ./wwwroot/dist/js/site.min.js --mode=development",
+    "build": "npm run clean && npm run webpack",
+    "postinstall": "npm run libman"
+  },
+  "dependencies": {
+    "gulp-cshtml-minify": "1.0.4"
+  },
+  "devDependencies": {
+    "fs": "0.0.2",
+    "webpack": "4.29.0",
+    "webpack-cli": "3.2.1"
+  }
+}
